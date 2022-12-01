@@ -1,6 +1,9 @@
 import "../styles/style.css";
-import javascriptLogo from "//javascript.svg";
-import { setupCounter } from "//counter.js";
+import AOS from "aos";
+import javascriptLogo from "..//javascript.svg";
+import { setupCounter } from "..//counter.js";
+
+AOS.init();
 
 document.querySelector("#app").innerHTML = `
   <div>
