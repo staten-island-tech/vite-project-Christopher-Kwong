@@ -1,0 +1,14 @@
+html, body, * {
+    padding, margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --light-blue: #2998ff;
+}
+
+.hero {
+    background-color: var(--light-blue);
+}
+
