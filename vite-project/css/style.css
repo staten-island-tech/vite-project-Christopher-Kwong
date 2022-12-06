@@ -1,1 +1,12 @@
-background-color: red;
+:root {
+    --skyblue: #a5D8DD; 
+    --lightgray: #DADADA;
+}
+
+.color1 {
+    background-color: var(--skyblue);
+}
+
+.color2 {
+    background-color: var(--lightgray);
+}
