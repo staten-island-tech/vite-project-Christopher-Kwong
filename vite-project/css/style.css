@@ -10,3 +10,7 @@
 .color2 {
     background-color: var(--lightgray);
 }
+
+.Box {
+    font-size: 10rem;
+}
