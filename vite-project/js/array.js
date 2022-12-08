@@ -1,3 +1,5 @@
+import { DOM } from "./dom";
+
 const Array = [
   {
     Name: "Wheat",
@@ -18,7 +20,5 @@ const Array = [
     },
   },
 ];
-
-data.forEach((e) => dispatchEvent.insertAdjacentHTML("afterend", ``));
 
 export { Array };
