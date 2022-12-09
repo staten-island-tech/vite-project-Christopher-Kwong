@@ -14,3 +14,14 @@
 .Box {
     font-size: 10rem;
 }
+
+img {
+    height: 5rem;
+}
+
+.Card {
+    border: solid 1px black;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
