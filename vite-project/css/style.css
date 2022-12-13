@@ -11,8 +11,11 @@
     background-color: var(--lightgray);
 }
 
-.Box {
-    font-size: 10rem;
+#Box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 img {
@@ -23,5 +26,5 @@ img {
     border: solid 1px black;
     text-align: center;
     width: 30%;
-    margin: auto;
+    margin: 1rem auto;
 }
