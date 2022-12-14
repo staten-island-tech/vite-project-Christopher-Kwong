@@ -1,6 +1,6 @@
 const DOM = {
-  Box: document.getElementById("Box"),
-  ButtonBox: document.querySelector("Button"),
+  CardBox: document.getElementById("CardBox"),
+  ButtonBox: document.getElementById("ButtonBox"),
 };
 
 export { DOM };

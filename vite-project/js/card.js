@@ -4,7 +4,7 @@ import { Array } from "./array";
 const Card = {
   Creation: function () {
     Array.forEach((element) =>
-      DOM.Box.insertAdjacentHTML(
+      DOM.CardBox.insertAdjacentHTML(
         "beforeend",
         `<div class="Card">
         <h2>${element.Name}</h2>

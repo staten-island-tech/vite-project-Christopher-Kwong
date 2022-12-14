@@ -23,16 +23,18 @@ Card.Creation();
 
 import { DOM } from "./dom";
 
-function ButtonCreate(Abbreviation, Name, Second) {
-  return `<section class="Button">
-  <button id="filterbutton-${Abbreviation}" class="filterbutton">${Name}${Second}</button>
-  </section>`;
+function Insert(Where, What) {
+  Where.insertAdjacentHTML("beforeend", What);
 }
 
-ButtonCreate(AF, Africa);
-ButtonCreate(AN, Antartica);
-ButtonCreate(AS, Asia);
-ButtonCreate(AU, Australia);
-ButtonCreate(EU, Europe);
-ButtonCreate(NA, North, America);
-ButtonCreate(SA, South, America);
+function ButtonCreate(Abbreviation, Name, Second) {
+  return `<button id="filterbutton-${Abbreviation}" class="filterbutton">${Name}${Second}</button>`;
+}
+
+Insert(DOM.ButtonBox, ButtonCreate("AN", "Antartica", ""));
+Insert(DOM.ButtonBox, ButtonCreate("AF", "Africa", ""));
+Insert(DOM.ButtonBox, ButtonCreate("AS", "Asia", ""));
+Insert(DOM.ButtonBox, ButtonCreate("AU", "Australia", ""));
+Insert(DOM.ButtonBox, ButtonCreate("EU", "Europe", ""));
+Insert(DOM.ButtonBox, ButtonCreate("NA", "North", "America"));
+Insert(DOM.ButtonBox, ButtonCreate("SA", "South", "America"));

@@ -11,7 +11,7 @@
     background-color: var(--lightgray);
 }
 
-#Box {
+#CardBox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,4 +27,13 @@ img {
     text-align: center;
     width: 30%;
     margin: 1rem auto;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+button {
+    margin: auto 1rem;
+    align-items: center;
 }
