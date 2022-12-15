@@ -1,3 +1,7 @@
+html {
+    text-align: center;
+}
+
 :root {
     --skyblue: #a5D8DD; 
     --lightgray: #DADADA;
@@ -24,7 +28,6 @@ img {
 
 .Card {
     border: solid 1px black;
-    text-align: center;
     width: 30%;
     margin: 1rem auto;
 }
@@ -35,5 +38,4 @@ section {
 
 button {
     margin: auto 1rem;
-    align-items: center;
 }

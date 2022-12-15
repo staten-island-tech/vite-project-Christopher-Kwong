@@ -1,4 +1,4 @@
-import { DOM } from "./dom";
+/* import { DOM } from "./dom";
 import { Array } from "./array";
 
 function FilterNorthAmerica() {
@@ -6,3 +6,4 @@ function FilterNorthAmerica() {
     (element) => console.log(element.Name)
   );
 }
+ */
