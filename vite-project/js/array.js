@@ -20,15 +20,15 @@ const Array = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Avena_sativa_L.jpg/220px-Avena_sativa_L.jpg",
     Continent: [" AS", " EU", "NA"],
     Link: "https://en.wikipedia.org/wiki/Oat",
-    Price: "",
+    Price: "$0.73 / kg",
   },
-  {
+  /*   {
     Name: "",
     Image: "",
     Continent: [],
     Link: "",
     Price: "",
-  },
+  }, */
 ];
 
 export { Array };

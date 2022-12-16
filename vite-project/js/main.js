@@ -30,3 +30,11 @@ Button.Insert(DOM.ButtonBox, Button.ButtonCreate("AU", "Australia", ""));
 Button.Insert(DOM.ButtonBox, Button.ButtonCreate("EU", "Europe", ""));
 Button.Insert(DOM.ButtonBox, Button.ButtonCreate("NA", "North", "America"));
 Button.Insert(DOM.ButtonBox, Button.ButtonCreate("SA", "South", "America"));
+
+import { Array } from "./array";
+
+const test = Array.filter((element) =>
+  element.Continent.includes("NA")
+).forEach((element) => console.log(element.Name));
+
+DOM.CardBox.insertAdjacentElement("afterend", `<p>Hello</p>`);
