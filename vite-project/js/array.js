@@ -36,3 +36,32 @@ const ProductArray = [
 ];
 
 export { ProductArray };
+
+const ButtonArray = [
+  {
+    Abbreviation: "AN",
+    Name: "Antartica",
+  },
+  {
+    Abbreviation: "AF",
+    Name: "Africa",
+  },
+  {
+    Abbreviation: "AS",
+    Name: "Asia",
+  },
+  {
+    Abbreviation: "AU",
+    Name: "Australia",
+  },
+  {
+    Abbreviation: "NA",
+    Name: "North America",
+  },
+  {
+    Abbreviation: "SA",
+    Name: "South America",
+  },
+];
+
+export { ButtonArray };

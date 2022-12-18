@@ -1,9 +1,7 @@
-import { DOM } from "./dom";
-
 const Card = {
-  CreatingCard: function (ArrayInput) {
+  CreatingCard: function (ArrayInput, aDOM) {
     ArrayInput.forEach((CardInfo) =>
-      DOM.CardBox.insertAdjacentHTML(
+      aDOM.CardBox.insertAdjacentHTML(
         "beforeend",
         `<div class="Card">
   <h2>${CardInfo.Name}</h2>

@@ -3,22 +3,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { DOM } from "./dom";
 import { Colors } from "./color";
-import { ProductArray } from "./array";
+import { ButtonArray, ProductArray } from "./array";
 import { Card } from "./card";
 import { Button } from "./button";
+import { FilteredButton } from "./filter";
 
 AOS.init();
 
-Card.CreatingCard(ProductArray);
+Button.ButtonCreation(ButtonArray);
 
-Button.Insert(DOM.ButtonBox, Button.ButtonCreate("AN", "Antartica"));
-Button.Insert(DOM.ButtonBox, Button.ButtonCreate("AF", "Africa"));
-Button.Insert(DOM.ButtonBox, Button.ButtonCreate("AS", "Asia"));
-Button.Insert(DOM.ButtonBox, Button.ButtonCreate("AU", "Australia"));
-Button.Insert(DOM.ButtonBox, Button.ButtonCreate("EU", "Europe"));
-Button.Insert(DOM.ButtonBox, Button.ButtonCreate("NA", "North America"));
-Button.Insert(DOM.ButtonBox, Button.ButtonCreate("SA", "South America"));
+Card.CreatingCard(ProductArray, DOM);
 
+FilteredButton.secondElement(ProductArray, DOM, Card);
+
+/* 
 function FilterNA() {
   let filtered = ProductArray.filter((element) =>
     element.Continent.includes("NA")
@@ -32,3 +30,4 @@ document
   .addEventListener("click", function () {
     FilterNA();
   });
+ */

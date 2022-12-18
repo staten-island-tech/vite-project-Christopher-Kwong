@@ -1,9 +1,13 @@
+import { DOM } from "./dom";
+
 const Button = {
-  Insert: function (Where, What) {
-    Where.insertAdjacentHTML("beforeend", What);
-  },
-  ButtonCreate: function (Abbreviation, Name) {
-    return `<button id="filterbutton-${Abbreviation}" class="filterbutton">${Name}</button>`;
+  ButtonCreation: function (Array) {
+    Array.forEach((element) =>
+      DOM.ButtonBox.insertAdjacentHTML(
+        "beforeend",
+        `<button id="filterbutton-${element.Abbreviation}" class="filterbutton">${element.Name}</button>`
+      )
+    );
   },
 };
 
