@@ -1,25 +1,34 @@
 import "../css/style.css";
 import AOS from "aos";
-import "aos/dist/aos/.css";
+import "aos/dist/aos.css";
+import { DOM } from "./dom";
+import { Colors } from "./color";
+import { ProductArray } from "./array";
+import { Card } from "./card";
+import { Button } from "./button";
 
 AOS.init();
 
-document.querySelector("#app").innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`;
+Card.CreatingCard(ProductArray);
 
-setupCounter(document.querySelector("#counter"));
+Button.Insert(DOM.ButtonBox, Button.ButtonCreate("AN", "Antartica"));
+Button.Insert(DOM.ButtonBox, Button.ButtonCreate("AF", "Africa"));
+Button.Insert(DOM.ButtonBox, Button.ButtonCreate("AS", "Asia"));
+Button.Insert(DOM.ButtonBox, Button.ButtonCreate("AU", "Australia"));
+Button.Insert(DOM.ButtonBox, Button.ButtonCreate("EU", "Europe"));
+Button.Insert(DOM.ButtonBox, Button.ButtonCreate("NA", "North America"));
+Button.Insert(DOM.ButtonBox, Button.ButtonCreate("SA", "South America"));
+
+function FilterNA() {
+  let filtered = ProductArray.filter((element) =>
+    element.Continent.includes("NA")
+  );
+  DOM.CardBox.innerHTML = "";
+  Card.CreatingCard(filtered);
+}
+
+document
+  .getElementById("filterbutton-NA")
+  .addEventListener("click", function () {
+    FilterNA();
+  });
