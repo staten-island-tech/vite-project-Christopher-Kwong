@@ -6,15 +6,16 @@ const ProductArray = [
     Continent: ["AS", "EU", "NA"],
     Link: "https://en.wikipedia.org/wiki/Wheat",
     Price: 0.3,
-    Currency: "USD",
+    Currency: "US$",
   },
   {
     Name: "Corn",
-    Image: "https://cdn.britannica.com/36/167236-050-BF90337E/Ears-corn.jpg",
+    Image:
+      " https://images.unsplash.com/photo-1567547921486-f280c2f53b5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29ybnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     Continent: ["AS", "EU"],
     Link: "https://en.wikipedia.org/wiki/Maize",
     Price: 1.18,
-    Currency: "USD",
+    Currency: "US$",
   },
   {
     Name: "Oat",
@@ -23,7 +24,7 @@ const ProductArray = [
     Continent: ["AS", "EU", "NA"],
     Link: "https://en.wikipedia.org/wiki/Oat",
     Price: 0.73,
-    Currency: "USD",
+    Currency: "US$",
   },
   /*   {
     Name: "",
@@ -38,6 +39,10 @@ const ProductArray = [
 export { ProductArray };
 
 const ButtonArray = [
+  {
+    Abbreviation: "All",
+    Name: "All",
+  },
   {
     Abbreviation: "AN",
     Name: "Antartica",

@@ -1,18 +1,31 @@
-const FilteredButton = {
-  FilterNA: function (Products, aDOM, Card) {
-    let Filtered = Products.filter((element) =>
-      element.Continent.includes("NA")
-    );
-    aDOM.CardBox.innerHTML = "";
-    Card.CreatingCard(Filtered, aDOM);
-  },
-  secondElement: function (Products, aDOM, Card) {
+const DisplayAll = {
+  FilterAll: function (Products, Array, Where) {
     document
-      .getElementById("filterbutton-NA")
+      .getElementById("filterbutton-All")
       .addEventListener("click", function () {
-        FilteredButton.FilterNA(Products, aDOM, Card);
+        Where.CardBox.innerHTML = "";
+        Products(Array, Where);
       });
   },
 };
 
-export { FilteredButton };
+export { DisplayAll };
+
+const FilteredButtonNA = {
+  FilterNA: function (Products, Where, Card) {
+    let Filtered = Products.filter((element) =>
+      element.Continent.includes("NA")
+    );
+    Where.CardBox.innerHTML = "";
+    Card.CreatingCard(Filtered, Where);
+  },
+  secondElement: function (Products, Where, Card) {
+    document
+      .getElementById("filterbutton-NA")
+      .addEventListener("click", function () {
+        FilteredButtonNA.FilterNA(Products, Where, Card);
+      });
+  },
+};
+
+export { FilteredButtonNA };

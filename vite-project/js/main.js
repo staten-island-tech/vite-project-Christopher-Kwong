@@ -6,7 +6,8 @@ import { Colors } from "./color";
 import { ButtonArray, ProductArray } from "./array";
 import { Card } from "./card";
 import { Button } from "./button";
-import { FilteredButton } from "./filter";
+import { FilteredButtonNA, DisplayAll } from "./filter";
+/* import { FilteredButtonNA, FilteredButtonAN } from "./filter"; */
 
 AOS.init();
 
@@ -14,20 +15,11 @@ Button.ButtonCreation(ButtonArray);
 
 Card.CreatingCard(ProductArray, DOM);
 
-FilteredButton.secondElement(ProductArray, DOM, Card);
+DisplayAll.FilterAll(Card.CreatingCard, ProductArray, DOM);
 
-/* 
-function FilterNA() {
-  let filtered = ProductArray.filter((element) =>
-    element.Continent.includes("NA")
-  );
-  DOM.CardBox.innerHTML = "";
-  Card.CreatingCard(filtered);
-}
+FilteredButtonNA.secondElement(ProductArray, DOM, Card);
 
-document
-  .getElementById("filterbutton-NA")
-  .addEventListener("click", function () {
-    FilterNA();
-  });
- */
+let Buttons = "filterbutton-" + ButtonArray.Abbreviation;
+console.log(document.getElementById(Buttons));
+
+/* FilteredButtonAN.secondElement(ProductArray, DOM, Card); */
