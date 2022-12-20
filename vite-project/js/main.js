@@ -6,7 +6,16 @@ import { Colors } from "./color";
 import { ButtonArray, ProductArray } from "./array";
 import { Card } from "./card";
 import { Button } from "./button";
-import { FilteredButtonNA, DisplayAll } from "./filter";
+import {
+  DisplayAll,
+  FilteredButtonAF,
+  FilteredButtonAN,
+  FilteredButtonAS,
+  FilteredButtonAU,
+  FilteredButtonEU,
+  FilteredButtonNA,
+  FilteredButtonSA,
+} from "./filter";
 /* import { FilteredButtonNA, FilteredButtonAN } from "./filter"; */
 
 AOS.init();
@@ -17,9 +26,11 @@ Card.CreatingCard(ProductArray, DOM);
 
 DisplayAll.FilterAll(Card.CreatingCard, ProductArray, DOM);
 
+// If possible, combined these
+FilteredButtonAF.secondElement(ProductArray, DOM, Card);
+FilteredButtonAN.secondElement(ProductArray, DOM, Card);
+FilteredButtonAS.secondElement(ProductArray, DOM, Card);
+FilteredButtonAU.secondElement(ProductArray, DOM, Card);
+FilteredButtonEU.secondElement(ProductArray, DOM, Card);
 FilteredButtonNA.secondElement(ProductArray, DOM, Card);
-
-let Buttons = "filterbutton-" + ButtonArray.Abbreviation;
-console.log(document.getElementById(Buttons));
-
-/* FilteredButtonAN.secondElement(ProductArray, DOM, Card); */
+FilteredButtonSA.secondElement(ProductArray, DOM, Card);
