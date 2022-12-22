@@ -7,7 +7,7 @@ const ProductArray = [
     Link: "https://en.wikipedia.org/wiki/Wheat",
     Price: 0.29,
     Currency: "US$",
-    Measurement: "/ kg",
+    Kg: "kg",
   },
   {
     Name: "Corn",
@@ -17,7 +17,7 @@ const ProductArray = [
     Link: "https://en.wikipedia.org/wiki/Maize",
     Price: 1.19,
     Currency: "US$",
-    Measurement: "/ kg",
+    Kg: "kg",
   },
   {
     Name: "Oat",
@@ -25,9 +25,9 @@ const ProductArray = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Avena_sativa_L.jpg/220px-Avena_sativa_L.jpg",
     Continent: ["AS", "EU", "NA"],
     Link: "https://en.wikipedia.org/wiki/Oat",
-    Price: 0.75,
+    Price: 0.69,
     Currency: "US$",
-    Measurement: "/ kg",
+    Kg: "kg",
   },
   {
     Name: "Rye",
@@ -37,7 +37,7 @@ const ProductArray = [
     Link: "https://en.wikipedia.org/wiki/Rye",
     Price: 0.99,
     Currency: "US$",
-    Measurement: "/ kg",
+    Kg: "kg",
   },
   {
     Name: "Rice",
@@ -47,7 +47,7 @@ const ProductArray = [
     Link: "https://en.wikipedia.org/wiki/Rice",
     Price: 0.49,
     Currency: "US$",
-    Measurement: "/ kg",
+    Kg: "kg",
   },
   {
     Name: "Barley",
@@ -57,16 +57,16 @@ const ProductArray = [
     Link: "https://en.wikipedia.org/wiki/Barley",
     Price: 0.29,
     Currency: "US$",
-    Measurement: "/ kg",
+    Kg: "kg",
   },
   {
     Name: "Sorghum",
     Image: "https://scx2.b-cdn.net/gfx/news/2019/drycondition.jpg",
     Continent: ["AF", "AS", "AU", "EU", "NA", "SA"],
     Link: "https://en.wikipedia.org/wiki/Sorghum",
-    Price: 0.39,
+    Price: 0.19,
     Currency: "US$",
-    Measurement: "/ kg",
+    Kg: "kg",
   },
   {
     Name: "Antartic Hair Grass",
@@ -76,7 +76,27 @@ const ProductArray = [
     Link: "https://en.wikipedia.org/wiki/Deschampsia_antarctica",
     Price: "Not Sold",
     Currency: "",
-    Measurement: "",
+    Kg: "",
+  },
+  {
+    Name: "Millet",
+    Image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2mxM31xRWFkYYCMiks9qWmCTeZBTKWYl7Q&usqp=CAU",
+    Continent: ["AF", "AS"],
+    Link: "https://en.wikipedia.org/wiki/Millet",
+    Price: 0.39,
+    Currency: "US$",
+    Kg: "kg",
+  },
+  {
+    Name: "Quinoa",
+    Image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_dhimKcEBinb0YenCRap8S7dNVyGI8_BsCA&usqp=CAU",
+    Continent: ["AS", "AU", "NA", "SA"],
+    Link: "https://en.wikipedia.org/wiki/Quinoa",
+    Price: 3.49,
+    Currency: "US$",
+    Kg: "kg",
   },
   /*   {
     Name: "",
@@ -85,6 +105,7 @@ const ProductArray = [
     Link: "",
     Price: ,
     Currency: "US$",
+    Measurement: "",
   }, */
 ];
 

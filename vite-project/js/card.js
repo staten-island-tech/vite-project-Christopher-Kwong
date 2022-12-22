@@ -8,7 +8,7 @@ const Card = {
   <img src="${CardInfo.Image}">
   <p>${CardInfo.Continent.join(", ")}</p>
   <a href="${CardInfo.Link}">Learn More</a>
-  <p>${CardInfo.Price} ${CardInfo.Currency} ${CardInfo.Measurement}</p>
+  <p>${CardInfo.Price} ${CardInfo.Currency} / ${CardInfo.Kg}</p>
   </div>`
       )
     );
