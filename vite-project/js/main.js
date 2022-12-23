@@ -2,7 +2,7 @@ import "../css/style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { DOM } from "./dom";
-import { Colors } from "./color";
+import { Colors } from "./button";
 import { ButtonArray, ProductArray } from "./array";
 import { Card } from "./card";
 import { Button } from "./button";
@@ -16,9 +16,12 @@ import {
   FilteredButtonNA,
   FilteredButtonSA,
 } from "./filter";
+import { Conversion } from "./button";
 /* import { FilteredButtonNA, FilteredButtonAN } from "./filter"; */
 
 AOS.init();
+
+Conversion.ConversionCreation();
 
 Button.ButtonCreation(ButtonArray);
 
@@ -34,3 +37,7 @@ FilteredButtonAU.secondElement(ProductArray, DOM, Card);
 FilteredButtonEU.secondElement(ProductArray, DOM, Card);
 FilteredButtonNA.secondElement(ProductArray, DOM, Card);
 FilteredButtonSA.secondElement(ProductArray, DOM, Card);
+
+const Test = ProductArray.map((x) => x.Price * 0.45);
+const Test2 = Test.forEach((element) => element.toFixed(2));
+console.log(Test2);

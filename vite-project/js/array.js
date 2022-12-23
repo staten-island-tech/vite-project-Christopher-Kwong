@@ -6,8 +6,8 @@ const ProductArray = [
     Continent: ["AS", "AU", "EU", "NA", "SA"],
     Link: "https://en.wikipedia.org/wiki/Wheat",
     Price: 0.29,
-    Currency: "US$",
     Kg: "kg",
+    Lb: "lb",
   },
   {
     Name: "Corn",
@@ -16,8 +16,8 @@ const ProductArray = [
     Continent: ["AS", "AU", "EU", "NA", "SA"],
     Link: "https://en.wikipedia.org/wiki/Maize",
     Price: 1.19,
-    Currency: "US$",
     Kg: "kg",
+    Lb: "lb",
   },
   {
     Name: "Oat",
@@ -26,8 +26,8 @@ const ProductArray = [
     Continent: ["AS", "EU", "NA"],
     Link: "https://en.wikipedia.org/wiki/Oat",
     Price: 0.69,
-    Currency: "US$",
     Kg: "kg",
+    Lb: "lb",
   },
   {
     Name: "Rye",
@@ -36,8 +36,8 @@ const ProductArray = [
     Continent: ["EU"],
     Link: "https://en.wikipedia.org/wiki/Rye",
     Price: 0.99,
-    Currency: "US$",
     Kg: "kg",
+    Lb: "lb",
   },
   {
     Name: "Rice",
@@ -46,8 +46,8 @@ const ProductArray = [
     Continent: ["AS"],
     Link: "https://en.wikipedia.org/wiki/Rice",
     Price: 0.49,
-    Currency: "US$",
     Kg: "kg",
+    Lb: "lb",
   },
   {
     Name: "Barley",
@@ -58,6 +58,7 @@ const ProductArray = [
     Price: 0.29,
     Currency: "US$",
     Kg: "kg",
+    Lb: "lb",
   },
   {
     Name: "Sorghum",
@@ -65,18 +66,8 @@ const ProductArray = [
     Continent: ["AF", "AS", "AU", "EU", "NA", "SA"],
     Link: "https://en.wikipedia.org/wiki/Sorghum",
     Price: 0.19,
-    Currency: "US$",
     Kg: "kg",
-  },
-  {
-    Name: "Antartic Hair Grass",
-    Image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9bqcLtiYaX_0Ui_asA8aRzlhG-e_M476Usw&usqp=CAU",
-    Continent: ["AN", "SA"],
-    Link: "https://en.wikipedia.org/wiki/Deschampsia_antarctica",
-    Price: "Not Sold",
-    Currency: "",
-    Kg: "",
+    Lb: "lb",
   },
   {
     Name: "Millet",
@@ -85,8 +76,8 @@ const ProductArray = [
     Continent: ["AF", "AS"],
     Link: "https://en.wikipedia.org/wiki/Millet",
     Price: 0.39,
-    Currency: "US$",
     Kg: "kg",
+    Lb: "lb",
   },
   {
     Name: "Quinoa",
@@ -95,8 +86,8 @@ const ProductArray = [
     Continent: ["AS", "AU", "NA", "SA"],
     Link: "https://en.wikipedia.org/wiki/Quinoa",
     Price: 3.49,
-    Currency: "US$",
     Kg: "kg",
+    Lb: "lb",
   },
   /*   {
     Name: "",
