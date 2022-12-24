@@ -6,8 +6,7 @@ const ProductArray = [
     Continent: ["AS", "AU", "EU", "NA", "SA"],
     Link: "https://en.wikipedia.org/wiki/Wheat",
     Price: 0.29,
-    Kg: "kg",
-    Lb: "lb",
+    Measurement: "kg",
   },
   {
     Name: "Corn",
@@ -16,8 +15,7 @@ const ProductArray = [
     Continent: ["AS", "AU", "EU", "NA", "SA"],
     Link: "https://en.wikipedia.org/wiki/Maize",
     Price: 1.19,
-    Kg: "kg",
-    Lb: "lb",
+    Measurement: "kg",
   },
   {
     Name: "Oat",
@@ -26,8 +24,7 @@ const ProductArray = [
     Continent: ["AS", "EU", "NA"],
     Link: "https://en.wikipedia.org/wiki/Oat",
     Price: 0.69,
-    Kg: "kg",
-    Lb: "lb",
+    Measurement: "kg",
   },
   {
     Name: "Rye",
@@ -36,8 +33,7 @@ const ProductArray = [
     Continent: ["EU"],
     Link: "https://en.wikipedia.org/wiki/Rye",
     Price: 0.99,
-    Kg: "kg",
-    Lb: "lb",
+    Measurement: "kg",
   },
   {
     Name: "Rice",
@@ -46,8 +42,7 @@ const ProductArray = [
     Continent: ["AS"],
     Link: "https://en.wikipedia.org/wiki/Rice",
     Price: 0.49,
-    Kg: "kg",
-    Lb: "lb",
+    Measurement: "kg",
   },
   {
     Name: "Barley",
@@ -57,8 +52,7 @@ const ProductArray = [
     Link: "https://en.wikipedia.org/wiki/Barley",
     Price: 0.29,
     Currency: "US$",
-    Kg: "kg",
-    Lb: "lb",
+    Measurement: "kg",
   },
   {
     Name: "Sorghum",
@@ -66,8 +60,7 @@ const ProductArray = [
     Continent: ["AF", "AS", "AU", "EU", "NA", "SA"],
     Link: "https://en.wikipedia.org/wiki/Sorghum",
     Price: 0.19,
-    Kg: "kg",
-    Lb: "lb",
+    Measurement: "kg",
   },
   {
     Name: "Millet",
@@ -76,8 +69,7 @@ const ProductArray = [
     Continent: ["AF", "AS"],
     Link: "https://en.wikipedia.org/wiki/Millet",
     Price: 0.39,
-    Kg: "kg",
-    Lb: "lb",
+    Measurement: "kg",
   },
   {
     Name: "Quinoa",
@@ -86,8 +78,7 @@ const ProductArray = [
     Continent: ["AS", "AU", "NA", "SA"],
     Link: "https://en.wikipedia.org/wiki/Quinoa",
     Price: 3.49,
-    Kg: "kg",
-    Lb: "lb",
+    Measurement: "kg",
   },
   /*   {
     Name: "",

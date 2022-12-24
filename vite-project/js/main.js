@@ -38,6 +38,19 @@ FilteredButtonEU.secondElement(ProductArray, DOM, Card);
 FilteredButtonNA.secondElement(ProductArray, DOM, Card);
 FilteredButtonSA.secondElement(ProductArray, DOM, Card);
 
-const Test = ProductArray.map((x) => x.Price * 0.45);
-const Test2 = Test.forEach((element) => element.toFixed(2));
-console.log(Test2);
+document
+  .getElementById("conversionbutton")
+  .addEventListener("click", function () {
+    let ProductArrayConverted = ProductArray.map((x) => {
+      if (x.Measurement === "kg") {
+        x.Price = Number.parseFloat(x.Price * 0.45).toFixed(2);
+        x.Measurement = "lb";
+      } else {
+        x.Price = Number.parseFloat((x.Price * 20) / 9).toFixed(2);
+        x.Measurement = "kg";
+      }
+      return x;
+    });
+    DOM.CardBox.innerHTML = "";
+    Card.CreatingCard(ProductArrayConverted, DOM);
+  });
