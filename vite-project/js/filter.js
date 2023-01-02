@@ -3,7 +3,7 @@ const DisplayAll = {
     document
       .getElementById("filterbutton-All")
       .addEventListener("click", function () {
-        Where.CardBox.innerHTML = "";
+        Where.innerHTML = "";
         Products(Array, Where);
       });
   },
