@@ -80,15 +80,6 @@ const ProductArray = [
     Price: 3.49,
     Measurement: "kg",
   },
-  /*   {
-    Name: "",
-    Image: "",
-    Continent: [],
-    Link: "",
-    Price: ,
-    Currency: "US$",
-    Measurement: "",
-  }, */
 ];
 
 export { ProductArray };
@@ -103,16 +94,16 @@ const ButtonArray = [
     Name: "Africa",
   },
   {
-    Abbreviation: "AN",
-    Name: "Antartica",
-  },
-  {
     Abbreviation: "AS",
     Name: "Asia",
   },
   {
     Abbreviation: "AU",
     Name: "Australia",
+  },
+  {
+    Abbreviation: "EU",
+    Name: "Europe",
   },
   {
     Abbreviation: "NA",

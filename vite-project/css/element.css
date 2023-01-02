@@ -1,0 +1,36 @@
+html {
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
+    font-size: var(--h3);
+}
+
+p {
+    font-size: var(--h4)
+}
+
+img {
+    height: 10rem;
+}
+
+body {
+    margin-top: 1rem;
+}
+
+button {
+    margin: 1rem 1rem;
+    font-size: var(--h4);
+}
+
+figcaption {
+    font-size: var(--h4)
+}

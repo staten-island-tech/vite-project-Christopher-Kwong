@@ -17,7 +17,7 @@ const FilteredButtonAF = {
       element.Continent.includes("AF")
     );
     Where.CardBox.innerHTML = "";
-    Card.CreatingCard(Filtered, Where);
+    Card.CreatingCard(Filtered, Where.CardBox);
   },
   secondElement: function (Products, Where, Card) {
     document
@@ -36,7 +36,7 @@ const FilteredButtonAN = {
       element.Continent.includes("AN")
     );
     Where.CardBox.innerHTML = "";
-    Card.CreatingCard(Filtered, Where);
+    Card.CreatingCard(Filtered, Where.CardBox);
   },
   secondElement: function (Products, Where, Card) {
     document
@@ -55,7 +55,7 @@ const FilteredButtonAS = {
       element.Continent.includes("AS")
     );
     Where.CardBox.innerHTML = "";
-    Card.CreatingCard(Filtered, Where);
+    Card.CreatingCard(Filtered, Where.CardBox);
   },
   secondElement: function (Products, Where, Card) {
     document
@@ -74,7 +74,7 @@ const FilteredButtonAU = {
       element.Continent.includes("AU")
     );
     Where.CardBox.innerHTML = "";
-    Card.CreatingCard(Filtered, Where);
+    Card.CreatingCard(Filtered, Where.CardBox);
   },
   secondElement: function (Products, Where, Card) {
     document
@@ -93,11 +93,11 @@ const FilteredButtonEU = {
       element.Continent.includes("EU")
     );
     Where.CardBox.innerHTML = "";
-    Card.CreatingCard(Filtered, Where);
+    Card.CreatingCard(Filtered, Where.CardBox);
   },
   secondElement: function (Products, Where, Card) {
     document
-      .getElementById("filterbutton-NA")
+      .getElementById("filterbutton-EU")
       .addEventListener("click", function () {
         FilteredButtonEU.FilterEU(Products, Where, Card);
       });
@@ -112,7 +112,7 @@ const FilteredButtonNA = {
       element.Continent.includes("NA")
     );
     Where.CardBox.innerHTML = "";
-    Card.CreatingCard(Filtered, Where);
+    Card.CreatingCard(Filtered, Where.CardBox);
   },
   secondElement: function (Products, Where, Card) {
     document
@@ -131,7 +131,7 @@ const FilteredButtonSA = {
       element.Continent.includes("SA")
     );
     Where.CardBox.innerHTML = "";
-    Card.CreatingCard(Filtered, Where);
+    Card.CreatingCard(Filtered, Where.CardBox);
   },
   secondElement: function (Products, Where, Card) {
     document

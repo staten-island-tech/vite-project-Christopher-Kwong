@@ -1,0 +1,12 @@
+#CardBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Card {
+    border: solid 1px black;
+    width: 30%;
+    margin: 1rem auto;
+}
