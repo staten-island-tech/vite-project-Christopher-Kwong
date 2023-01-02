@@ -3,7 +3,7 @@ const Card = {
     ArrayInput.forEach((CardInfo) => {
       aDomElement.insertAdjacentHTML(
         "beforeend",
-        `<article class="Card">
+        `<article data-aos="fade-up"  data-aos-delay="300" class="Card">
       
   <h3>${CardInfo.Name}</h3>
   <figure>
