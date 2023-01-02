@@ -25,7 +25,7 @@ Button.ButtonCreation(ButtonArray, DOM.ButtonBox);
 
 Card.CreatingCard(ProductArray, DOM.CardBox);
 
-DisplayAll.FilterAll(Card.CreatingCard, ProductArray, DOM.Card);
+DisplayAll.FilterAll(Card.CreatingCard, ProductArray, DOM);
 
 // If possible, combined these
 FilteredButtonAF.secondElement(ProductArray, DOM, Card);
