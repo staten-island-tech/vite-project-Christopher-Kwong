@@ -1,41 +1,5 @@
-html {
-    text-align: center;
-}
+@import "./root.css";
+@import "./color.css";
+@import "./element.css";
+@import "./class-id.css";
 
-:root {
-    --skyblue: #a5D8DD; 
-    --lightgray: #DADADA;
-}
-
-.color1 {
-    background-color: var(--skyblue);
-}
-
-.color2 {
-    background-color: var(--lightgray);
-}
-
-#CardBox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-img {
-    height: 5rem;
-}
-
-.Card {
-    border: solid 1px black;
-    width: 30%;
-    margin: 1rem auto;
-}
-
-section {
-    margin-top: 1rem;
-}
-
-button {
-    margin: auto 1rem;
-}

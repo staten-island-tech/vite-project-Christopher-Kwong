@@ -1,0 +1,17 @@
+.color1 {
+    --primary: var(--1-firstcolor);
+    --secondary: var(--1-secondcolor);
+}
+
+.color2 {
+    --primary: var(--2-firstcolor);
+    --secondary: var(--2-secondcolor);
+}
+
+body {
+    background-color: var(--primary);
+}
+
+article {
+    background-color: var(--secondary);
+}
